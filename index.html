@@ -1,230 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>パンプキンガーデン</title>
+    <title>パンプキンガーデンへようこそ/Welcome to Pumpkin Garden</title>
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-
+    <link rel="icon" type="image/x-icon" href="./img/pumpkin.svg">
     <!-- custom css file link  -->
     <link rel="stylesheet" href="style/style.css">
 
 </head>
-<body onload="getPics()">
-    
-<!-- header section starts  -->
 
-<header>
+<body>
+    <!-- header section starts  -->
+    <header>
+        <div class="logo">
+            <img src="./img/pumpkin.svg" />
+            <span>
+                パンプキンガーデン</span>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">ホーム</a></li>
+                <li><a href="#about">問い合わせ</a></li>
+            </ul>
+        </nav>
 
-<a href="#" class="logo">パンプキンガーデン</a>
+        <div class="fas fa-bars"></div>
 
-<nav class="navbar">
-    <ul>
-        <li><a href="#home">ホーム</a></li>
-        <li><a href="#about">問い合わせ</a></li>
-    </ul>
-</nav>
+    </header>
 
-<div class="fas fa-bars"></div>
+    <!-- header section ends -->
 
-</header>
+    <!-- home section starts  -->
 
-<!-- header section ends -->
+    <section class="home" id="home">
 
-<!-- home section starts  -->
+        <div class="content">
 
-<section class="home" id="home">
+            <h1>
+                <span class="line-break">貸農園</span>
+                <span class="line-break middle">パンプキンガーデンへ</span>
+                <span class="line-break">ようこそ</span>
+            </h1>
+            <p>Welcome to Pumpkin Garden!</p>
+            <p>土の温もりを感じながら野菜を育てましょう</p>
+        </div>
 
-<div class="content">
+    </section>
 
-    <h1>パンプキンガーデンへようこそ</h1>
-    <p>パンプキンを始め様々な植物を耕す、タネをまく、</p>
+    <!-- home section ends -->
 
+    <!-- about section starts  -->
 
-</div>
+    <section class="about">
 
-</section>
+        <h1 class="heading"> <i class="fas fa-quote-left"></i>Pumpkin Garden <span class="line-break">パンプキンガーデン<i
+                class="fas fa-quote-right"></i></span></h1>
+        <div class="row">
+            <div class="image">
+                <img src="./img/pumpkin_garden.jpg" alt="pumpkin_garden_image">
+            </div>
 
-<!-- home section ends -->
+            <div class="content">
+                <h3>Pumpkin Garden</h3>
+                <p>
+                    みなさんのお好きな野菜や花を自分で育てることができるシェア畑です。
+                    安心して食べられるオーガニックの野菜を育ててみることもできます。
+                    また、自然の中で植物を栽培しながら自然に気の合う仲間もできますね。
+                </p>
+                <p>
+                    Pumpkin Garden is a community garden that you can lent and grow your own vegetables and flowers
+                    while enjoying sharing the joy of nature with friendly people. You can experiment planting any
+                    vegetables you want to eat organically.
+                </p>
+            </div>
 
-<!-- about section starts  -->
+        </div>
 
-<section class="about">
 
-<h1 class="heading"> <i class="fas fa-quote-left"></i> パンプキンガーデン <i class="fas fa-quote-right"></i> </h1>
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- service section starts  -->
+
+    <section class="service" id="service">
 
-<div class="row">
+        <h1 class="heading"> <i class="fas fa-quote-left"></i>畑の設備<span class="line-break">(Garden Facilities)<i class="fas fa-quote-right"></i>
+        </span></h1>
 
-    <div class="image">
-        <img src="./img/pumpkin_garden.jpg" alt="pumpkin_garden_image">
-    </div>
+        <div class="box-container">
 
-    <div class="content">
-        <h3>パンプキンというのは</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus molestias corporis inventore soluta odio vero, dolor itaque illo eos. Velit, sequi libero animi debitis provident odit perferendis maxime repudiandae illo.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere omnis fugit corporis dignissimos saepe! Accusamus accusantium enim laudantium voluptatem ab?</p>
-    </div>
+            <div class="box" style="">
+                <i class="fas fa-seedling"></i>
+                <h3>堆肥（一部有料）</h3>
+                <p>Gardening Compost</p>
+            </div>
 
-</div>
+            <div class="box">
+                <i class="fas fa-water"></i>
+                <h3>水場</h3>
+                <p>Free Water For Gardening</p>
+            </div>
 
+            <div class="box">
+                <i class=" fas fa-solar-panel"></i>
+                <h3>貸農具</h3>
+                <p>Gardening Tools</p>
+            </div>
 
-</section>
-
-<!-- about section ends -->
-
-<!-- service section starts  -->
-
-<section class="service" id="service">
-
-<h1 class="heading"> <i class="fas fa-quote-left"></i>畑の設備 <i class="fas fa-quote-right"></i> </h1>
-
-<div class="box-container">
-
-    <div class="box">
-        <i class="fas fa-seedling"></i>
-        <h3>堆肥</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, nemo?</p>
-      
-    </div>
-
-    <div class="box">
-        <i class="fas fa-water"></i>
-        <h3>水場</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, nemo?</p>
-    </div>
-
-    <div class="box">
-        <i class=" fas fa-solar-panel"></i>
-        <h3>貸農具</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, nemo?</p>
-    </div>
-
-    <div class="box">
-        <i class="fas fa-car-side"></i>
-        <h3>駐車場</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, nemo?</p>
-    </div>
-  
-   
-</div>
-
-</section>
-
-<!-- service section ends -->
-
-<!-- project section starts  -->
-
-<section class="galery" id="galery">
-
-<h1 class="heading"> <i class="fas fa-quote-left"></i> 画像 <i class="fas fa-quote-right"></i> </h1>
-
-<div class="box-container gambar">
-
-    <div class="box">
-        <img src="img/IMG_1192/IMG_1002.jpg" alt="">
-    </div>
-
-    <div class="box">
-        <img src="img/IMG_1192/IMG_0580.jpg" alt="">
-     </div>
-
-    <div class="box">
-        <img src="img/IMG_1192/IMG_1298.jpg" alt="">
-     </div>
-
-    <div class="box">
-        <img src="img/IMG_1192/IMG_0559.jpg" alt="">
-    </div>
-
-    <div class="box">
-        <img src="img/IMG_1192/IMG_0116.jpg" alt="">
-      
-    </div>
-
-    <div class="box">
-        <img src="img/IMG_1192/IMG_0455.jpg" alt="">
-    </div>
-
-</div>
-<body onload="getPics()"></body>
-</section>
-
-<!-- project section ends -->
-
-<!-- donate section starts  -->
-
-<section class="donate" id="donate">
-
-<h1 class="heading"> <i class="fas fa-quote-left"></i> 場所と料金 <i class="fas fa-quote-right"></i> </h1>
-<div style="display: flex; width: 100%;">
- <div style="width: 50%;">
- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3337.4835634045844!2d130.29933741026872!3d33.227632860712504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3541ca9bc53a1833%3A0xabb1bd95d9bb838c!2sSuetsugu-750%20Honj%C5%8Dmachi%2C%20Saga%2C%20840-0024!5e0!3m2!1sen!2sjp!4v1698719945731!5m2!1sen!2sjp" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
- </div>
- <div class="inquiry" style="width: 50%;">
- <h3>--場所--</h3>
- <p>佐賀県佐賀市</p>
- <p>本庄町大字末次750 </p>
- <p>(５分の距離にホームセンターとイオンがあります。)</p>
- <br>
- <h3> 区画面積と利用料金</h3>
- <p> 25㎡あたり８０００円/年</p>
-</div>
-</div>
-
-</section>
-
-<!-- donate section ends -->
-
-
-
-<!-- footer section starts  -->
-
-<section class="footer">
-
-<div class="box-container"  id="about">
-
-    <div class="box">
-        <a href="#" class="logo"><i class="fa-solid fa-pumpkin"></i>パンプキンガーデン</a>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda possimus impedit voluptate fuga id sapiente perspiciatis amet eos esse iure.</p>
-    </div>
-
-    <div class="box">
-        <h3 class="share">問い合わせ</h3>
-        <a href="#">香月</a>
-        <a href="tel:0952-22-8721"><i class="fas fa-phone-alt"></i> 090-8626-1145  </a>
-    </div>
-
-   
-
-</div>
-</section>
-
-<!-- footer section ends -->
-
-
-
-
-
-
-
-
-
-
-
-<div id="fullpage" onclick="this.style.display='none';"></div>
-
-
-
-
-
-
-
-
-
-<!-- custom js file link  -->
-<script src="js/main.js"></script>
-<script src="js/map.js"></script>
+            <div class="box">
+                <i class="fas fa-car-side"></i>
+                <h3>駐車場</h3>
+                <p>Free parking</p>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- service section ends -->
+
+    <!-- project section starts  -->
+
+    <section class="galery" id="galery">
+
+        <h1 class="heading"> <i class="fas fa-quote-left"></i> 画像 <i class="fas fa-quote-right"></i> </h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="img/IMG_1192/image1.jpg" alt="">
+            </div>
+
+            <div class="box">
+                <img src="img/IMG_1192/image2.jpg" alt="">
+            </div>
+
+            <div class="box">
+                <img src="img/IMG_1192/image3.jpg" alt="">
+            </div>
+
+            <div class="box">
+                <img src="img/IMG_1192/image4.jpg" alt="">
+            </div>
+
+            <div class="box">
+                <img src="img/IMG_1192/image5.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="img/IMG_1192/image6.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="img/IMG_1192/image7.jpg" alt="">
+            </div>
+
+        </div>
+
+    </section>
+    <section class="donate" id="donate">
+
+        <h1 class="heading"> <i class="fas fa-quote-left"></i> 場所と料金 <i class="fas fa-quote-right"></i> </h1>
+        <div class="locationContainer">
+            <div class="location">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3337.474515646543!2d130.29932507547957!3d33.22786997347857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzPCsDEzJzQwLjMiTiAxMzDCsDE4JzA2LjgiRQ!5e0!3m2!1sen!2sjp!4v1711871150746!5m2!1sen!2sjp"
+                    width="80%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+            <div class="inquiry">
+                <h3>場所</h3>
+                <br>
+                <p>佐賀県佐賀市</p>
+                <p>本庄町大字末次750 </p>
+                <p class="detail">(５分の距離にホームセンターとイオンがあります。)</p>
+                <br>
+                <h3> 区画面積と利用料金</h3>
+                <br>
+                <p> 25㎡あたり８０００円/年</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- donate section ends -->
+
+
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="box-container" id="about">
+
+            <div class="box">
+                <img src="./img/pumpkin.svg" />
+                <a href="#" class="logo"><i class="fa-solid fa-pumpkin"></i>パンプキンガーデン</a>
+            </div>
+
+            <div class="box">
+                <h3 class="share">問い合わせ</h3>
+                <a href="#">香月</a>
+                <a href="tel:0952-22-8721"><i class="fas fa-phone-alt"></i> 090-8626-1145 </a>
+            </div>
+        </div>
+    </section>
+    <!-- footer section ends -->
+    <div id="fullpage" style="display: none;" onclick="this.style.display='none';"></div>
+    <script src="js/main.js"></script>
+    <script src="js/map.js"></script>
 </body>
+
 </html>
